@@ -1,12 +1,13 @@
 <script setup>
-
+import {useInView} from '../reusableComponent.js'
+const { elementRef, isVisible } = useInView(0.5)
 </script>
 <template>
     <div class="bg-[#E9F3F4]">
-        <div class="flex items-start justify-between mx-36 pt-48 pb-18 border-b border-b-[#b0aeae]">
+        <div class="flex items-start justify-between mx-36 pt-48 pb-18 border-b border-b-[#b0aeae]" ref="elementRef" :class="{ 'typewriter opacity-100': isVisible, 'opacity-0': !isVisible }">
             <div class="flex items-center gap-1">
                 <img src="../assets/logo/material-symbols-light--finance-chip-outline.svg" alt="" class="w-12 h-12">
-                <p class="text-[#180D39] text-2xl font-bold">Finpay</p>
+                <p class="text-[#180D39] text-2xl font-bold" >Finpay</p>
             </div>
             <div class="flex justify-center gap-24">
                 <div>
@@ -36,7 +37,7 @@
                     </ul>
                 </div>
             </div>
-            <div>
+            <div ref="elementRef">
                 <p class="text-[#180D39]">Follow us on</p>
                 <div class="flex items-center gap-2">
                     <img src="../assets/logo/la--twitter.svg" alt="">
@@ -45,7 +46,7 @@
                 </div>
             </div>
         </div>
-        <p class="text-center py-4 text-sm text-[#180D39] font-semibold">@Finpay 2025,All Rights Reserved.</p>
+        <p class="text-center py-4 text-sm text-[#180D39] font-semibold" ref="elementRef" :class="{ 'typewriter opacity-100': isVisible, 'opacity-0': !isVisible }">@Finpay 2025,All Rights Reserved.</p>
     </div>
 </template>
 <style scoped>
