@@ -9,7 +9,11 @@ import FooterSection from './components/FooterSection.vue'
 </script>
 
 <template>
-  <div>
+
+
+
+
+  <div class="xlg:w-360 lg:w-360 md:w-360 sm:w-192">
     <header-section/>
     <hero-section/> 
     <future-section/>

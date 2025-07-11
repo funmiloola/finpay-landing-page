@@ -24,10 +24,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="bg-[#E9F3F4]" ref="sectionEl"  :class="{ 'animate-typewriter': isVisible }">
-    <div class="flex gap-18 pt-28 pl-18 pb-40 w-full ">
-      <div class="w-1/2 typewriter">
-        <h2 class="text-[#180D39] text-7xl" >
+  <div class="bg-[#E9F3F4] " ref="sectionEl"  :class="{ 'animate-typewriter': isVisible }">
+    <div class=" flex flex-col md:flex-row items-center justify-center gap-38 pt-28 md:pl-18 pl-45 pb-80 w-full min-h-screen ">
+      <div class="w-full md:w-1/2 typewriter mx-auto ">
+        <h2 class="text-[#180D39] text-4xl md:text-7xl" >
           <strong>Get paid early <br /></strong> save automatically <br />
           all your pay.
         </h2>
@@ -42,7 +42,7 @@ onMounted(() => {
             class="w-3/4 px-4 py-3 pr-24 border border-white bg-white text-[#180D39] text-sm rounded-2xl outline-none"
           />
           <button
-            class="flex gap-2 items-center px-3 py-3 absolute top-1/2 left-70 -translate-y-[20%] bg-[#2A8E9E] text-white rounded-xl"
+            class="flex gap-2 items-center px-3 py-3 absolute top-1/2 left-70 -translate-y-[20%] bg-[#2A8E9E] text-white rounded-xl cursor-pointer"
           >
             Get Started
             <img
@@ -53,13 +53,13 @@ onMounted(() => {
           </button>
         </div>
         <div class="flex gap-24 pt-8 ">
-          <p class="text-[#180D39] text-2xl font-bold">Klarna.</p>
-          <p class="text-[#180D39] text-2xl font-bold">coinbase</p>
-          <p class="text-[#180D39] text-2xl font-bold">instacart</p>
+          <p class="text-[#180D39] text-2xl font-bold cursor-pointer"> <a href="">Klarna. </a></p>
+          <p class="text-[#180D39] text-2xl font-bold cursor-pointer"> <a href="">coinbase </a></p>
+          <p class="text-[#180D39] text-2xl font-bold cursor-pointer"> <a href="">instacart</a></p>
         </div>
       </div>
-      <div class="w-1/2 relative slide-top">
-        <div class= " border border-white w-2/3 xl:2/3 lg:1/4 bg-white  rounded-2xl ">
+      <div class=" relative slide-top w-full md:w-1/2 mx-auto ">
+        <div class= " border border-white md:w-2/3 w-1/2 bg-white  rounded-2xl ">
           <div class="flex pl-3 pr-2 pt-4 items-center gap-2">
             <div>
               <img src="../assets/logo/arcticons--myinsta.svg" alt="" class="w-12 h-12" />
@@ -96,10 +96,10 @@ onMounted(() => {
             <input type="radio" id="two" name="option" />
           </label>
           <div class="flex justify-center">
-            <button class="border-[#180D39] border  mt-2 py-1 mb-6 w-full mx-4 bg-[#180D39] text-white rounded-lg">Pay</button>
+            <button class="border-[#180D39] border  mt-2 py-1 mb-6 w-full mx-4 bg-[#180D39] text-white rounded-lg cursor-pointer">Pay</button>
           </div>
         </div>
-        <div class="flex flex-col absolute -top-6 left-53 w-65 lg:w-40 xl:w-65 md:w-30 2xl:w-90 ">
+        <div class="flex flex-col absolute -top-6 left-53 md:w-65 w-50">
           <div class="border border-[#2A8E9E] bg-[#2A8E9E] rounded-t-lg cursor-pointer">
             <p class="pt-3.5 pl-4 text-white text-sm">Credit Card</p>
             <p class="pt-1.5 pl-4 pb-27 text-white text-xl">234 **** ****</p>
@@ -110,7 +110,7 @@ onMounted(() => {
           </div>
         </div>
       </div>
-    </div>
+    </div> 
   </div>
 </template>
 <style scoped>
