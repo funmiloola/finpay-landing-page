@@ -25,10 +25,10 @@ onMounted(() => {
 
 <template>
   <div class="bg-[#E9F3F4] " ref="sectionEl"  :class="{ 'animate-typewriter': isVisible }">
-    <div class=" flex flex-col md:flex-row items-center justify-center gap-38 pt-28 md:pl-18 pl-45 pb-80 w-full min-h-screen ">
+    <div class=" flex flex-col md:flex-row items-center justify-center gap-38 pt-28 md:pl-18 pl-40 pb-80 md:w-full min-h-screen ">
       <div class="w-full md:w-1/2 typewriter mx-auto ">
-        <h2 class="text-[#180D39] text-4xl md:text-7xl" >
-          <strong>Get paid early <br /></strong> save automatically <br />
+        <h2 class="text-[#180D39] text-5xl md:text-7xl" >
+          <strong>Get paid early <br /></strong> save automatically<br />
           all your pay.
         </h2>
         <p class="pt-4 text-[#180D39]">
@@ -59,7 +59,7 @@ onMounted(() => {
         </div>
       </div>
       <div class=" relative slide-top w-full md:w-1/2 mx-auto ">
-        <div class= " border border-white md:w-2/3 w-1/2 bg-white  rounded-2xl ">
+        <div class= " border border-white md:w-2/3 w-2/3 bg-white  rounded-2xl ">
           <div class="flex pl-3 pr-2 pt-4 items-center gap-2">
             <div>
               <img src="../assets/logo/arcticons--myinsta.svg" alt="" class="w-12 h-12" />
@@ -99,7 +99,7 @@ onMounted(() => {
             <button class="border-[#180D39] border  mt-2 py-1 mb-6 w-full mx-4 bg-[#180D39] text-white rounded-lg cursor-pointer">Pay</button>
           </div>
         </div>
-        <div class="flex flex-col absolute -top-6 left-53 md:w-65 w-50">
+        <div class="flex flex-col absolute -top-6 left-53 md:w-65 w-55">
           <div class="border border-[#2A8E9E] bg-[#2A8E9E] rounded-t-lg cursor-pointer">
             <p class="pt-3.5 pl-4 text-white text-sm">Credit Card</p>
             <p class="pt-1.5 pl-4 pb-27 text-white text-xl">234 **** ****</p>
