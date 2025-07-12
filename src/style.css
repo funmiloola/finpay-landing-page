@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --breakpoint-sm:200px;
-  --breakpoint-md:768px;
-  --breakpoint-lg:976px;
-  --breakpoint-xlg:1200px
+  --breakpoint-lg:1190px;
+  --breakpoint-g:1188px;
+  --breakpoint-md:870px;
+  
 }
 @font-face {
   font-family: 'MyHelvetica';

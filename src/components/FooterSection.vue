@@ -4,12 +4,12 @@ const { elementRef, isVisible } = useInView(0.5)
 </script>
 <template>
     <div class="bg-[#E9F3F4]">
-        <div class="flex flex-col gap-10 md:flex-row items-start justify-between md:mx-36 mx-26 pt-48 pb-18 border-b border-b-[#b0aeae]" ref="elementRef" :class="{ 'typewriter opacity-100': isVisible, 'opacity-0': !isVisible }">
+        <div class="flex flex-col gap-10 xl:flex-row items-start justify-between xl:mx-36 mx-26 pt-48 pb-18 border-b border-b-[#b0aeae]" ref="elementRef" :class="{ 'typewriter opacity-100': isVisible, 'opacity-0': !isVisible }">
             <div class="flex items-center gap-1">
                 <img src="../assets/logo/material-symbols-light--finance-chip-outline.svg" alt="" class="w-12 h-12">
                 <p class="text-[#180D39] text-2xl font-bold" >Finpay</p>
             </div>
-            <div class="flex justify-center gap-24">
+            <div class="flex flex-col md:flex-row justify-center gap-24">
                 <div>
                     <ul>
                         <li class="font-bold text-[#180D39] text-lg">Solutions</li>

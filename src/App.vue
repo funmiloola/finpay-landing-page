@@ -13,7 +13,7 @@ import FooterSection from './components/FooterSection.vue'
 
 
 
-  <div class="xlg:w-360 lg:w-360 md:w-360 sm:w-192">
+  <div class="w-full max-w-[1440px] mx-auto">
     <header-section/>
     <hero-section/> 
     <future-section/>

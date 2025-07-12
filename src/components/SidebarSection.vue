@@ -6,7 +6,7 @@ const navs = ref(["Products", "Customers", "Pricing", "Learn"]);
 <template>
   <div>
     <div
-      class="xlg:hidden lg:hidden md:hidden sm:flex-col gap-8 fixed bg-white w-full h-full left-0 pt-20 z-40"
+      class=" md:hidden flex-col gap-8 fixed bg-white w-full h-full left-0 pt-20 z-40"
     >
       <ul class="flex flex-col items-center gap-8">
         <li

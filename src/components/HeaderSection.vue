@@ -10,17 +10,18 @@ function toggleIcon (){
 </script>
 
 <template>
-  <div class="bg-[#E9F3F4] xlg:block lg:block md:block sm:flex justify-between items-center  ">
-    <div class="flex items-center justify-between pl-16 pr-16 mt-4 ">
-      <div class="flex items-center gap-1">
-        <img
+  <div class="bg-[#E9F3F4] md:block  flex justify-between items-center ">
+    <div class="flex items-center gap-23 px-4 md:pl-16 md:pr-16 xl:pr-10 mt-4 ">
+      <div >
+      <a href="/" class="flex items-center gap-1" >  <img
           src="../assets/logo/material-symbols-light--finance-chip-outline.svg"
           alt=""
           class="w-12 h-12"
         />
         <p class="text-[#180D39] text-2xl font-bold">Finpay</p>
+        </a>
       </div>
-      <div class="xlg:flex lg:flex md:flex sm:hidden gap-92 items-center" >
+      <div class="hidden md:flex justify-between w-full items-center" >
         <div class="">
           <ul class="flex gap-12 items-center text-[#180D39] font-medium ">
             <li class="cursor-pointer"><a href=""> Products </a></li>
@@ -35,9 +36,9 @@ function toggleIcon (){
         </div>
       </div>
     </div>
-    <div class="xlg:hidden lg:hidden md:hidden sm:block  fixed top-6 right-6 z-50 cursor-pointer " @click="toggleIcon">
-          <img src="../assets/logo/solar--hamburger-menu-linear.svg" alt="" class="w-12 h-12 " v-if="showIcon">
-          <img src="../assets/logo/material-symbols-light--close-rounded.svg" alt="" class="w-12 h-12 " v-else>
+    <div class=" block md:hidden  fixed top-0 right-6 z-50 cursor-pointer " @click="toggleIcon">
+          <img src="../assets/logo/solar--hamburger-menu-linear.svg" alt="" class="w-10 h-10 " v-if="showIcon">
+          <img src="../assets/logo/material-symbols-light--close-rounded.svg" alt="" class="w-10 h-10 " v-else>
         </div>
         <sidebar-section  v-if="showSidebar"/>
   </div>
