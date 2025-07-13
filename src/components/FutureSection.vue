@@ -75,20 +75,20 @@ const chartOptions = {
 const LineChart = Line;
 
 const { elementRef:futureRef, isVisible:isFutureVisible } = useInView(0.5);
-const {elementRef:whyRef, isVisible:isWhyVisible} = useInView(0.5);
+const {elementRef:whyRef, isVisible:isWhyVisible} = useInView(0);
 </script>
 <template>
   <div >
-    <div class="border border-white bg-white ml-14 mr-14 rounded-lg -translate-y-25 shadow-2xl" >
-      <p class="text-[#2A8E9E] text-sm pl-10 pt-10" ref="futureRef"  :class="{ 'typewriter opacity-100': isFutureVisible, 'opacity-0': !isFutureVisible }" >FUTURE PAYMENT</p>
+    <div class="border border-white bg-white ml-14 mr-14 rounded-lg -translate-y-25 shadow-2xl" ref="futureRef"  :class="{ 'typewriter opacity-100': isFutureVisible, 'opacity-0': !isFutureVisible }"  >
+      <p class="text-[#2A8E9E] text-sm pl-10 pt-10" >FUTURE PAYMENT</p>
       <div class="flex flex-col md:items-center md:flex-row justify-between gap-2 xl:gap-70  md:pr-36 pr-8 pl-10 pb-5 md:pb-10">
         <div>
-          <p class=" text-2xl md:text-4xl pt-2 text-[#180D39]"  ref="futureRef"  :class="{ 'typewriter opacity-100': isFutureVisible, 'opacity-0': !isFutureVisible }"  >
+          <p class=" text-2xl md:text-4xl pt-2 text-[#180D39]"  >
             Experience that grows <br />with your scale.
           </p>
         </div>
         <div>
-          <p  class="text-[#a5a9aa] "  ref="futureRef"  :class="{ 'slide-top opacity-100': isFutureVisible, 'opacity-0': !isFutureVisible }" >
+          <p  class="text-[#a5a9aa] "  ref="futureRef">
             Design a financial operating system that works for <br />your
             business and streamlined cash flow <br />
             management
@@ -129,12 +129,12 @@ const {elementRef:whyRef, isVisible:isWhyVisible} = useInView(0.5);
         </div>
       </div>
     </div>
-    <div class="">
-      <p class="text-[#2A8E9E] text-sm text-center pt-6"  ref="whyRef"  :class="{ 'slide-top opacity-100': isWhyVisible, 'opacity-0': !isWhyVisible }" >Why us</p>
-      <p class="text-center pt-2 xl:text-3xl text-[#180D39] text-xl"  ref="whyRef"  :class="{ 'slide-top opacity-100': isWhyVisible, 'opacity-0': !isWhyVisible }" >
+    <div class="" ref="whyRef"  :class="{ 'typewriter opacity-100': isWhyVisible, 'opacity-0': !isWhyVisible }" >
+      <p class="text-[#2A8E9E] text-sm text-center md:pt-6"  >Why us</p>
+      <p class="text-center pt-2 xl:text-3xl text-[#180D39] text-xl"   >
         Why they prefer Finpay
       </p>
-      <div class="flex flex-col xl:flex-row items-center justify-center mx-auto xl:mx-14 gap-4" ref="whyRef"  :class="{ 'typewriter opacity-100': isWhyVisible, 'opacity-0': !isWhyVisible }" >
+      <div class="flex flex-col xl:flex-row items-center justify-center mx-auto xl:mx-14 gap-4"  >
         <div
           class="border border-[#E9F3F4] bg-[#E9F3F4] mt-8 mx:auto flex flex-col items-center justify-center xl:items-start  pt-8 pb-6 px-10 xl:pl-10 xl:pr-10 xl:w-2/5 w-1/2 rounded-lg"
         >

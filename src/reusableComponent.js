@@ -1,6 +1,6 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
-export function useInView(threshold = 0.5, rootMargin = '0px') {
+export function useInView(threshold = 0, rootMargin = '0px') {
   const elementRef = ref(null)
   const isVisible = ref(false)
 
@@ -12,7 +12,7 @@ export function useInView(threshold = 0.5, rootMargin = '0px') {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             isVisible.value = true
-            observer.unobserve(entry.target) // stop observing once visible
+            observer.unobserve(entry.target)
           }
         })
       },

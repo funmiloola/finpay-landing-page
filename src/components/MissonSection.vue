@@ -1,7 +1,7 @@
 <script setup>
 import {useInView} from '../reusableComponent.js'
-const { elementRef:futureRef, isVisible:isFutureVisible } = useInView(0.5);
-const {elementRef:whyRef, isVisible:isWhyVisible} = useInView(0.5);
+const { elementRef:futureRef, isVisible:isFutureVisible } = useInView(0);
+const {elementRef:whyRef, isVisible:isWhyVisible} = useInView(0);
 </script>
 <template>
   <div>

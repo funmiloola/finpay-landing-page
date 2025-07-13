@@ -1,6 +1,6 @@
 <script setup>
 import {useInView} from '../reusableComponent.js'
-const { elementRef, isVisible } = useInView(0.5)
+const { elementRef, isVisible } = useInView(0)
 </script>
 <template>
     <div class="bg-[#E9F3F4]">
@@ -37,7 +37,7 @@ const { elementRef, isVisible } = useInView(0.5)
                     </ul>
                 </div>
             </div>
-            <div ref="elementRef">
+            <div>
                 <p class="text-[#180D39]">Follow us on</p>
                 <div class="flex items-center gap-2">
                     <a href="">

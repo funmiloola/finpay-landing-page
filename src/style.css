@@ -34,22 +34,22 @@ body {
 
 
 .typewriter{
-  animation: typingClip 1.5s steps(30) forwards;
+  animation: typingClip 1s steps(30) forwards;
 
 }
 .right-slidein{
-  animation: slideInRight 1.5s steps(30) forwards;
+  animation: slideInRight 1s steps(30) forwards;
    
 }
 .slide-top {
   opacity: 0;
-  animation: fadeInTop 1.5s ease forwards;
+  animation: fadeInTop 1s ease forwards;
 }
 
 @keyframes fadeInTop {
   from {
     opacity: 0;
-    transform: translateY(-20px); /* adjust offset as you like */
+    transform: translateY(-10px);
   }
   to {
     opacity: 1;
