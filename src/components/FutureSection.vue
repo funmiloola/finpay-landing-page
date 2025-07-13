@@ -88,7 +88,7 @@ const {elementRef:whyRef, isVisible:isWhyVisible} = useInView(0);
           </p>
         </div>
         <div>
-          <p  class="text-[#a5a9aa] "  ref="futureRef">
+          <p  class="text-[#a5a9aa] ">
             Design a financial operating system that works for <br />your
             business and streamlined cash flow <br />
             management
@@ -129,15 +129,15 @@ const {elementRef:whyRef, isVisible:isWhyVisible} = useInView(0);
         </div>
       </div>
     </div>
-    <div class="" ref="whyRef"  :class="{ 'typewriter opacity-100': isWhyVisible, 'opacity-0': !isWhyVisible }" >
-      <p class="text-[#2A8E9E] text-sm text-center md:pt-6"  >Why us</p>
-      <p class="text-center pt-2 xl:text-3xl text-[#180D39] text-xl"   >
+    <div class="" ref="whyRef"  :class="{ 'typewriter opacity-100': isWhyVisible, 'opacity-0': !isWhyVisible }"  >
+      <p class="text-[#2A8E9E] text-sm text-center md:pt-6" ref="whyRef"  :class="{ 'typewriter opacity-100': isWhyVisible, 'opacity-0': !isWhyVisible }" >Why us</p>
+      <p class="text-center pt-2 xl:text-3xl text-[#180D39] text-xl"  ref="whyRef"  :class="{ 'typewriter opacity-100': isWhyVisible, 'opacity-0': !isWhyVisible }" >
         Why they prefer Finpay
       </p>
       <div class="flex flex-col xl:flex-row items-center justify-center mx-auto xl:mx-14 gap-4"  >
         <div
           class="border border-[#E9F3F4] bg-[#E9F3F4] mt-8 mx:auto flex flex-col items-center justify-center xl:items-start  pt-8 pb-6 px-10 xl:pl-10 xl:pr-10 xl:w-2/5 w-1/2 rounded-lg"
-        >
+        ref="whyRef"  :class="{ 'typewriter opacity-100': isWhyVisible, 'opacity-0': !isWhyVisible }">
           <p class="text-[#2A8E9E] xl:text-7xl text-4xl pb-5 font-bold">3k+</p>
           <p class="pt-2 xl:pr-4 text-center text-[#180D39] font-semibold xl:text-xl text-lg">
             Business already running 
@@ -146,7 +146,7 @@ const {elementRef:whyRef, isVisible:isWhyVisible} = useInView(0);
         </div>
         <div
           class="border border-[#E9F3F4] bg-[#E9F3F4] flex flex-col items-center justify-center gap-4 xl:items-start mx:auto  mt-8 pt-8 pb-6 xl:pl-10 pl-10 pr-10 xl:pr-10  xl:w-2/5 w-1/2 rounded-lg"
-        >
+        ref="whyRef"  :class="{ 'typewriter opacity-100': isWhyVisible, 'opacity-0': !isWhyVisible }">
           <p class="text-[#180D39] text-center md:text-xl text-lg font-semibold">
             Instant Withdraw your funds
             at any time

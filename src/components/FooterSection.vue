@@ -3,14 +3,15 @@ import {useInView} from '../reusableComponent.js'
 const { elementRef, isVisible } = useInView(0)
 </script>
 <template>
-    <div class="bg-[#E9F3F4]">
-        <div class="flex flex-col gap-10 xl:flex-row items-start justify-between xl:mx-36 mx-26 pt-48 pb-18 border-b border-b-[#b0aeae]" ref="elementRef" :class="{ 'typewriter opacity-100': isVisible, 'opacity-0': !isVisible }">
-            <div class="flex items-center gap-1">
+    <div class="bg-[#E9F3F4]" >
+        <div ref="elementRef" :class="{ 'typewriter opacity-100': isVisible, 'opacity-0': !isVisible }">
+        <div class="flex flex-col gap-10 xl:flex-row items-start justify-between xl:mx-36 mx-26 pt-48 pb-18 border-b border-b-[#b0aeae]" >
+            <div class="flex items-center gap-1" >
                 <img src="../assets/logo/material-symbols-light--finance-chip-outline.svg" alt="" class="w-12 h-12">
-                <p class="text-[#180D39] text-2xl font-bold" >Finpay</p>
+                <p class="text-[#211f28] text-2xl font-bold" >Finpay</p>
             </div>
             <div class="flex flex-col md:flex-row justify-center gap-24">
-                <div>
+                <div ref="elementRef" :class="{ 'typewriter opacity-100': isVisible, 'opacity-0': !isVisible }">
                     <ul>
                         <li class="font-bold text-[#180D39] text-lg">Solutions</li>
                         <li class="pt-4 text-sm text-[#b0aeae]"><a href="">Small Businesses</a></li>
@@ -19,7 +20,7 @@ const { elementRef, isVisible } = useInView(0)
                         <li class="pt-2 text-sm text-[#b0aeae]"><a href="">Taxes</a></li>
                     </ul>   
                 </div>
-                <div>
+                <div ref="elementRef" :class="{ 'typewriter opacity-100': isVisible, 'opacity-0': !isVisible }">
                     <ul>
                         <li class="font-bold text-[#180D39] text-lg">Company</li>
                         <li class="pt-4 text-sm text-[#b0aeae]"><a href="">About us</a></li>
@@ -27,7 +28,7 @@ const { elementRef, isVisible } = useInView(0)
                         <li class="pt-2 text-sm text-[#b0aeae]"><a href="">Contact</a></li>
                     </ul>
                 </div>
-                <div>
+                <div ref="elementRef" :class="{ 'typewriter opacity-100': isVisible, 'opacity-0': !isVisible }">
                      <ul>
                         <li class="font-bold text-[#180D39] text-lg">Learn</li>
                         <li class="pt-4 text-sm text-[#b0aeae]"><a href="">Blog</a></li>
@@ -37,7 +38,7 @@ const { elementRef, isVisible } = useInView(0)
                     </ul>
                 </div>
             </div>
-            <div>
+            <div ref="elementRef" :class="{ 'typewriter opacity-100': isVisible, 'opacity-0': !isVisible }">
                 <p class="text-[#180D39]">Follow us on</p>
                 <div class="flex items-center gap-2">
                     <a href="">
@@ -53,6 +54,7 @@ const { elementRef, isVisible } = useInView(0)
             </div>
         </div>
         <p class="text-center py-4 text-sm text-[#180D39] font-semibold" ref="elementRef" :class="{ 'typewriter opacity-100': isVisible, 'opacity-0': !isVisible }">@Finpay 2025,All Rights Reserved.</p>
+        </div>
     </div>
 </template>
 <style scoped>
