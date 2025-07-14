@@ -14,45 +14,29 @@ body {
   font-family: 'MyHelvetica', sans-serif;
 }
  
-@keyframes typingClip {
-  from {
-    clip-path: inset(0 100% 0 0);
-  }
-  to {
-    clip-path: inset(0 0 0 0);
-  }
-}
-@keyframes slideInRight {
-  from {
-    clip-path: inset(0 100% 0 0);
-  }
-  to {
-    clip-path: inset(0 0 0 0);
-  }
-}
-
-
-
-.typewriter{
-  animation: typingClip 1s steps(30) forwards;
-
-}
-.right-slidein{
-  animation: slideInRight 1s steps(30) forwards;
-   
-}
-.slide-top {
-  opacity: 0;
-  animation: fadeInTop 1s ease forwards;
-}
-
-@keyframes fadeInTop {
+@keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-10px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
   }
+}
+
+
+.typewriter {
+  opacity: 0;
+  animation: fadeIn 0.20s ease forwards;
+}
+
+
+.right-slidein {
+  opacity: 0;
+  animation: fadeIn 0.2s ease forwards;
+}
+
+
+.slide-top {
+  opacity: 0;
+  animation: fadeIn 0.2s ease forwards;
 }
